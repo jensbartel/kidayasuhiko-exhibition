@@ -1,0 +1,538 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1;
+  text-align: justify;
+}
+
+a, p {
+  text-decoration: none;
+  color: darkslategray;
+  font-weight: 300;
+}
+
+a:hover, a :focus, a :active {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: darkslategray;
+}
+
+p {
+  cursor: default;
+  display: block;
+  margin: 1em 0;
+}
+
+h1 {
+  font-weight: 200;
+  margin-bottom: 30px;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.separator {
+  width: 100%;
+  padding: 0 40%;
+  margin: 3rem 0;
+}
+
+.signIn-mobile {
+  display: none;
+  padding-right: 7.5%;
+}
+
+#signInLinkMobile {
+  display: none;
+}
+
+video {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 20px 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  opacity: 0.65;
+  transition: 0.3s;
+}
+.header:hover {
+  opacity: 1;
+}
+.header img {
+  height: 50px;
+  padding-left: 60px;
+  transition: 0.3s;
+}
+.header a {
+  font-size: 0.9em;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+  color: black;
+  font-family: "Catamaran", sans-serif;
+}
+.header a:hover {
+  color: #444;
+}
+.header .signIn {
+  display: flex;
+  padding-right: 7.5%;
+}
+.header .signInItemLeft {
+  padding-right: 20px;
+}
+.header .menu-left {
+  display: flex;
+  padding-left: 7.5%;
+  align-items: center;
+}
+.header .menu-left a {
+  font-size: 1.8rem;
+}
+
+button, button:focus {
+  outline: none;
+}
+
+.side-drawer {
+  background-color: #262626;
+  opacity: 0.95;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 998;
+  left: -100%;
+  transition: all 0.15s ease-out;
+}
+.side-drawer ul {
+  padding: 0 0 0 7.5%;
+  margin: 120px 0;
+  list-style-type: none;
+}
+.side-drawer a {
+  line-height: 3.5;
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+.side-drawer a:hover {
+  color: darkgray;
+}
+.side-drawer.active {
+  left: 0;
+}
+.side-drawer .submenu {
+  display: none;
+  margin: 0;
+  padding: 0 0 10px 40px;
+  overflow: hidden;
+}
+.side-drawer .submenu a {
+  font-size: 0.95rem;
+  line-height: 3;
+}
+.side-drawer .submenu.active {
+  display: block;
+}
+
+.mainvisual {
+  position: relative;
+  top: -100px;
+}
+.mainvisual img {
+  display: block;
+  width: 100%;
+}
+
+.exhibition-dates {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.intro {
+  margin-top: 40px;
+}
+
+.introduction-text {
+  position: center;
+  width: 60%;
+  line-height: 1.8em;
+  text-align: center;
+  margin: auto;
+  margin-top: -50px;
+  margin-bottom: 80px;
+  padding: 20px 0px 0;
+}
+
+.half-page-variant {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 0;
+  line-height: 0;
+  align-items: center;
+}
+.half-page-variant .col-left, .half-page-variant .col-right {
+  width: 50%;
+}
+.half-page-variant .col-left p, .half-page-variant .col-right p {
+  padding: 0 15%;
+  line-height: 1.8rem;
+}
+.half-page-variant .col-left {
+  float: left;
+}
+.half-page-variant .col-right {
+  float: right;
+}
+.half-page-variant img {
+  width: 100%;
+}
+.half-page-variant .emphasis {
+  width: 70%;
+  padding: 10px 15% 10px;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 1.5rem;
+  background-color: black;
+  line-height: 2.5rem;
+  color: #e8e8e8;
+  margin-left: 15%;
+}
+.half-page-variant .emphasis:hover {
+  color: white;
+}
+
+.caption a {
+  line-height: 1.4em;
+  display: block;
+  padding: 0 15%;
+}
+.caption a:hover {
+  color: black;
+}
+
+.not-first {
+  padding-top: 0;
+}
+
+.emphasis-threeInRow {
+  padding: 4px 15% 4px;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 1.1rem;
+  background-color: black;
+  line-height: 1.8rem;
+  color: #e8e8e8;
+  margin-top: 0.75rem;
+}
+.emphasis-threeInRow:hover {
+  color: white;
+  cursor: pointer;
+}
+.emphasis-threeInRow a {
+  color: inherit;
+}
+
+.text-threeInRow {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.caption-threeInRow {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.caption-threeInRow:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.fourInRow {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.fourInRow a {
+  font-weight: 400;
+}
+.fourInRow p {
+  margin: 0.5rem 0 1rem;
+  cursor: pointer;
+}
+.fourInRow p:hover {
+  color: black;
+}
+
+.captions-row p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+
+.footer {
+  height: 60px;
+  background-color: white;
+  color: #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin: 30px 7.5% 30px;
+}
+.footer a {
+  font-weight: 400;
+}
+
+.sns-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.sns-icons img {
+  width: 33px;
+  height: 33px;
+}
+
+.copyright {
+  text-align: right;
+  font-size: 0.9rem;
+  padding-right: 7.5%;
+  margin-top: 0;
+  color: darkslategray;
+  cursor: default;
+  font-weight: 300;
+  font-family: "Catamaran", sans-serif;
+  margin-top: 6px;
+}
+
+/* tablet landscape ------------------ */
+@media screen and (max-width: 1024px) {
+  .half-page-variant .col-left p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .half-page-variant .col-right p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .half-page-variant .emphasis {
+    font-size: 1.3rem;
+  }
+
+  .caption {
+    font-size: 0.95rem;
+    line-height: 1.4em;
+  }
+
+  .footer a {
+    font-size: 0.8em;
+  }
+}
+/* tablet ----------------------- */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 20px 0;
+  }
+  .header img {
+    height: 44px;
+    padding-left: 40px;
+  }
+  .header .signIn {
+    font-size: 0.9rem;
+  }
+
+  .mainvisual {
+    top: 0;
+  }
+
+  .introduction-text {
+    margin-top: 40px;
+  }
+
+  .half-page-variant {
+    display: flex;
+    flex-direction: column;
+  }
+  .half-page-variant .col-left, .half-page-variant .col-right {
+    width: 85%;
+    float: none;
+    margin: auto;
+    padding-top: 15px;
+  }
+  .half-page-variant .col-left p, .half-page-variant .col-right p {
+    padding: 5px 0 0 0;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  .half-page-variant .emphasis {
+    margin-left: 0;
+  }
+  .half-page-variant .caption a {
+    padding: 0;
+  }
+  .half-page-variant.top-square {
+    margin-bottom: 1.5rem;
+  }
+
+  .half-page-variant-text {
+    font-size: 0.9rem;
+  }
+
+  .emphasis-threeInRow.first {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+
+  .text-threeInRow.first {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .caption-threeInRow.first {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 2.5rem;
+  }
+
+  .not-first {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .caption {
+    font-size: 1rem;
+  }
+  .caption a {
+    padding: 0;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    line-height: 1.5;
+    font-size: 1.15rem;
+  }
+  .footer a {
+    padding: 15% 0;
+  }
+  .footer .copyright {
+    text-align: center;
+    padding: 10px 0 10px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .header {
+    padding: 5px 0;
+  }
+  .header img {
+    height: 32px;
+    padding-left: 0px;
+  }
+  .header .signIn {
+    display: none;
+  }
+  .header .menu-left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7.5%;
+  }
+  .header .menu-left a {
+    font-size: 0.8rem;
+  }
+
+  .signIn-mobile {
+    display: block;
+    padding-right: 7.5%;
+    font-size: 0.8rem;
+  }
+
+  #signInLinkMobile {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .side-drawer {
+    width: 100%;
+    left: -100%;
+  }
+  .side-drawer ul {
+    padding: 0 0 0 12%;
+  }
+  .side-drawer .submenu {
+    padding: 0 0 10px 30px;
+  }
+
+  .mainvisual {
+    top: -5px;
+  }
+
+  .introduction-text {
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .emphasis-threeInRow {
+    padding: 10px 15%;
+    font-size: 0.9rem;
+  }
+  .emphasis-threeInRow.first {
+    padding: 10px 15% 10px;
+    font-size: 1.3rem;
+  }
+  .emphasis-threeInRow.ciudadela {
+    padding: 10px 5%;
+  }
+
+  .emphasis.portobello {
+    padding: 10px 8%;
+  }
+}
+.container-fluid {
+  padding: 0 7.5%;
+}
+.container-fluid img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.container-fluid .img-left {
+  padding-right: 6%;
+}
+.container-fluid .img-center {
+  padding: 0 3%;
+}
+.container-fluid .img-right {
+  padding-left: 6%;
+}
+
+/*# sourceMappingURL=sass_styles_jp.css.map */

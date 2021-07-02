@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+
+<!-- dev. note: index.html corresponds to what later will be kida_eng.html-->
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset='utf-8'>
+    <title>Shibunkaku | Kida Yasuhiko</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/kida/css/sass_styles.css">
+    <link rel="stylesheet" href="assets/kida/css/hamburgers.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/kida/js/script.js"></script>
+    <script type="text/javascript" src="assets/kida/js/jquery_functions.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- side drawer and header ----------------------------->
+    <div class="side-drawer" id="side-drawer">
+        <ul>
+            <li><a href="https://shop.shibunkaku.co.jp/english/shop/default.aspx">Online Shop Home</a></li>
+            <li><a href="https://www.shibunkaku.co.jp/english/">Shibunkaku Home</a></li>
+            <li onclick="showSubmenu('1')">
+                <a href="javascript:void(0);">Previous Events</a>
+                <ul class="submenu" id="submenu1">
+                    <li><a href="https://www.shibunkaku.co.jp/event/mishima_eng.html">Mishima Ritsue</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/english/shop/e/eHayashi/">Hayashi Takeshi: She</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/english/shop/e/eAkagi/">Akagi Akito: Objects for Tea</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/english/shop/e/eKuroda/">Kuroda Seitarō and Taizō Brothers Exhibition</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/english/shop/e/eYamagu/">Yamaguchi Takeo: Watercolors</a></li>
+                </ul>
+            </li>
+            <li><a href="https://shop.shibunkaku.co.jp/english/shop/r/r10/">Search by Artist</a></li>
+            <li onclick="showSubmenu('2')">
+                <a href="javascript:void(0);">Search by Genre</a>
+                <ul class="submenu" id="submenu2">
+                    <li><a href="https://shop.shibunkaku.co.jp/english/shop/goods/search.aspx?search=x&genre_tree=60&search=search">Calligraphy</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/english/shop/goods/search.aspx?search=x&genre_tree=70&search=search">Painting</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/english/shop/goods/search.aspx?search=x&genre_tree=80&search=search">Object</a></li>
+                </ul>
+            </li>
+            <li onclick="showSubmenu('3')">
+                <a href="javascript:void(0);">Search by Format</a>
+                <ul class="submenu" id="submenu3">
+                    <li><a href="https://shop.shibunkaku.co.jp/english/shop/goods/search.aspx?search=x&genre_tree=30&search=search">Hanging Scroll</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/english/shop/goods/search.aspx?search=x&genre_tree=40&search=search">Framed Work</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/english/shop/goods/search.aspx?search=x&genre_tree=50&search=search">Folding Screen</a></li>
+                </ul>
+            </li>
+            <li id="signInLinkMobile">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/customer/menu.aspx">Sign In/My Account</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="header" id="header">
+        <div class="menu-left">
+            <div>
+                <button class="hamburger hamburger--3dxy" type="button" onClick="menuButtonAnimation()" id="hamburger">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+            <div>
+                <a href="https://shop.shibunkaku.co.jp/english/shop/default.aspx">
+                    <img id="logo" src="assets/shibunlogo.jpg"></a>
+            </div>
+            <div class="signIn-mobile">
+                <a href="kida.html">JP</a>
+            </div>
+        </div>
+        <div class="signIn">
+            <div class="signInItemLeft">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/customer/menu.aspx">Sign In/My Account</a>
+            </div>
+            <div>
+                <a href="kida.html">JP</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- top section ---------------------------------------->
+    <div class="mainvisual">
+        <img src="assets/kida/img/kida_exView01.jpg">
+    </div>
+
+    <div class="introduction-text">
+        <h1>Kida Yasuhiko: Markets of the World</h1>
+        <p class="exhibition-dates">Shibunkaku, August 27 (Thursday)—September 6 (Sunday)<br>355 Motomachi, Higashiyama-ku, Kyoto 605-0089, Tel: 075-531-0001</p>
+        <p class="exhibition-dates">Shibunkaku Ginza, September 11 (Friday)—September 20 (Sunday)<br>5-3-12 Ginza, Chūō-ku, Tokyo 104-0061, Tel: 03-3289-0001</p>
+        <p class="intro">It has been five years since Kida Yasuhiko passed away. Left behind in a corner of his atelier was a group of small paintings, in colors on wooden board, that perhaps more than any of his vast oeuvre encapsulated the liveliness, noises and smells of places all around the world which Kida loved to explore again and again: the bustling scenes of street markets.<br><br>Much of Kida’s thought and reflections during his travels can be traced in his custom-made sketchbooks, containing a plethora of details of his trips and particular situations that often can be matched with particular paintings. This exhibition showcases the artist’s works together with his sketchbooks, allowing for the first time a close-up glimpse into his journey to the markets of the world.</p><br>
+        <p style="font-size: 0.75em; line-height: 1.25;">* All texts and travel memories quoted from: Kida Yasuhiko, <i>Markets of the World</i>. Kawade Shobō Shinsha (Tokyo, 1993).</p>
+    </div>
+
+
+
+
+    <!-- first content block -------------------------------->
+    <div class="half-page-variant top-square">
+        <div class="col-left">
+            <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-002/"><img src="assets/kida/img/002_1280.jpg"></a>
+        </div>
+        <div class="col-right">
+            <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-002/"><span class="emphasis">Hong Kong</span></a>
+            <p>Hong Kong! My strongest impression was the colorful neon lights, with trams and double-decker buses running on the road and lots of delicious food, not to mention Victoria Peak, the famous street bars on Lan Kwai Fong, and the numerous night markets scattered around Kowloon. The whole city is alive day and night. The slopes of Hong Kong Island were crazily steep. I was being told the wrong address for my hotel, ending up wandering up and down the bar district aimlessly, an amazing experience. I didn't know the city had two hotels of the same name.</p>
+            <div class="caption"><a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-002/"><i>Hong Kong</i><br>Colors on board<br>25 x 25 cm<br>1990</a></div>
+        </div>
+    </div>
+
+    <div class="half-page-variant not-first">
+        <div class="col-left">
+            <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-003/"><span class="emphasis">Chiang Mai</span></a>
+            <p>The Chinese markets of Chiang Mai are overwhelming. They say you can find anything to eat here that has four legs unless it’s a table or a chair. Thank goodness there aren't many of the plush Japanese tourist ladies that recently show up everywhere in the busloads. Another saying has it that after a heavy rain, you will find catfish even in the puddles of water on the streets. That’s one of the charming things about this country.</p>
+            <div class="caption"><a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-003/"><i>Chiang Mai,</i> Thailand<br>Colors on board<br>25 x 25 cm<br>1990</a></div>
+        </div>
+        <div class="col-right">
+            <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-003/"><img src="assets/kida/img/003_1280.jpg"><br><br></a>
+        </div>
+    </div>
+
+    <div class="separator">
+        <hr size="1">
+    </div>
+
+
+
+
+    <!-- second content block, SASS + BOOTSTRAP version  --------------->
+    <div class="container-fluid fade-in">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-007/">
+                <img class="mb-3" src="assets/kida/img/007_1280.jpg">
+                <p class="emphasis-threeInRow first d-inline">Seoul</p></a>
+                <p class="text-threeInRow first mt-4">Winter in Seoul is freezing cold, but the elderly Korean ladies who run the market's shops are so energetic. Namdaemun and Dongdaemun markets have many hundred years of history, making them a symbol of national pride. It’s wonderful to feel the abundant energy of the Korean people on this colorful market. When night falls, the normal shops pull the shutters down, but the streets bustle with numerous mobile food stalls. There is plenty of inexpensive Korean cuisines, and a common sight is office ladies enjoying raw octopus and drinking shochu next a display of pig heads.</p>
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-007/">
+                <p class="caption-threeInRow first"><i>Seoul</i>, South Korea<br>
+                Colors on board<br>
+                18 x 18 cm<br>
+                1993
+                </p></a>
+            </div>
+            <div class="col-6 col-lg-4">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-019/">
+                <img class="mb-3" src="assets/kida/img/019_640.jpg">
+                    <p class="emphasis-threeInRow d-inline">Milan</p></a>
+                <p class="text-threeInRow mt-4">On Viale Papiniano in Milan there is a market opening every Tuesday and Saturday morning for selling clothes, shoes, and miscellaneous goods. At the place that hosts the Milan Fashion Week, expect to be surrounded by colorful fashion styles and many local visitors, but luckily not the boisterous crowds of Japanese tourists that populate Via della Spiga or Via Monte Napoleone.</p>
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-019/">
+                <p class="caption-threeInRow"><i>Milan Morning Market</i>,      
+                Italy<br>
+                Colors on board<br>
+                18 x 18 cm<br>
+                1992
+                </p></a>                
+            </div>
+            <div class="col-6 col-lg-4">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-033/">
+                <img class="mb-3" src="assets/kida/img/033_640.jpg">
+                    <p class="emphasis-threeInRow d-inline">La Ciudadela</p></a>
+                <p class="text-threeInRow mt-4">The Ciudadela Market in Mexico City is dedicated to folk crafts. In this regard, Mexico is a real treasure trove: colorful masks collected from all over the country, animal dolls, terracotta, musical instruments, leather goods, etc. are all packed in the small shops here. The indigenous people demonstrate how to make traditional fabrics, and there are many guitar workshops as well. Further into the back alleys, there were numerous workshops for metal goods—for my taste, it was too much of all the souvenirs.</p>
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-033/">
+                <p class="caption-threeInRow"><i>La Ciudadela Folk Art Market,</i> Mexico<br>    
+                Colors on board<br>  
+                18 x 18 cm<br>
+                1992
+                </p></a>                
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <!-- third content block, BOOTSTRAP version  -------------------->
+    <div class="container-fluid fourInRow">
+        <div class="row fade-in">
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-001/"><img src="assets/kida/img/001_640.jpg">
+                <p><i>Temple of Heaven (Beijing),</i> China<br>Colors on board<br>22.5 x 22.5 cm<br>1989</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-026/"><img src="assets/kida/img/026_640.jpg">
+                <p><i>Clignancourt Flea Market,</i> France<br>Colors on board<br>18 x 18 cm<br>1995</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-032/"><img src="assets/kida/img/032_640.jpg">
+                <p><i>San Francisco el Alto,</i> Guatemala<br>Colors on board<br>18 x 18 cm<br>1995</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-011/"><img src="assets/kida/img/011_640.jpg">
+                <p><i>Bangkok Floating Market,</i> Thailand<br>Colors on board<br>18 x 18 cm<br>1991</p></a>
+            </div>
+        </div>
+        <div class="row captions-row fade-in">
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-013/"><img src="assets/kida/img/013_640.jpg">
+                <p><i>Thimphu Sabji Bazaar,</i> Bhutan<br>Colors on board<br>18 x 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-014/"><img src="assets/kida/img/014_640.jpg">
+                <p><i>Paro Sunday Market,</i> Bhutan<br>Colors on board<br>18 x 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-010/"><img src="assets/kida/img/010_640.jpg">
+                <p><i>Cheung Chau,</i> Hongkong<br>Colors on board<br>18 x 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-012/"><img src="assets/kida/img/012_640.jpg">
+                <p><i>Klungkung Morning Market,</i> Indonesia<br>Colors on board<br>18 x 18 cm<br>1992</p></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- installation view ---------------------------------------->
+<!--
+    <div style="width: 100%; margin: 4em 0;">
+        <img src="assets/kida/img/IMG-0302.JPG" style="width: 100%;">
+    </div>
+-->
+    
+    <!-- video ---------------------------------------------->
+    <div style="width: 100%; margin: 4em 0">
+        <video autoplay muted loop>
+            <source src="assets/kida/img/471.mp4" type="video/mp4">
+        </video>
+    </div>      
+
+
+
+
+    <!-- fourth content block --------------->
+    <div class="half-page-variant not-first top-square">
+        <div class="col-left">
+            <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-025/"><span class="emphasis">Portobello Market</span></a>
+            <p>Portobello Market, I'd say, is typical of the many street markets in London. Sundays are important for buying antiques as there are various markets open in different locations and on different days. Portobello Market itself opens on Saturdays and has the most shops and food stalls among the markets in London. In addition to the increasing numbers of souvenir shops and hip accessories stores, one can find literally anything here—from old Imperial splendor to outright rubbish. There are also many street musicians who play all day long, the ultimate icing on the cake!</p>
+            <div class="caption"><a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-025/"><i>Portobello Market,</i> United Kingdom<br>Colors on board<br>18 x 18 cm<br>1993</a></div>
+        </div>
+        <div class="col-right">
+            <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-025/"><img src="assets/kida/img/025_1280%20copy.jpg"></a><br><br>
+        </div>
+    </div>
+
+    <div class="half-page-variant">
+        <div class="col-left">
+            <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-015/"><img src="assets/kida/img/015_1280.jpg"></a>
+        </div>
+        <div class="col-right">
+            <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-015/"><span class="emphasis">Old Dehli</span></a>
+            <p>Old Delhi reminds me of the glory of the Mughal Empire. The main street that extends from the iconic Red Fort to the east of downtown is called Chandni Chowk, with stalls opening on both sides of the road. In the northern corner of the market there were plenty of simply constructed wooden barracks housing a live pigeon market. It seems to me that these pigeons are a popular as a source of food here.</p>
+            <div class="caption"><a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-015/"><i>Old Dehli Pigeon Market,</i> India<br>Colors on board<br>18 x 18 cm<br>1993</a></div>
+        </div>
+    </div>
+
+    <div class="separator">
+        <hr size="1">
+    </div>
+
+
+
+
+    <!-- fifth content block, SASS + BOOTSTRAP version  ------------>
+    <div class="container-fluid fade-in">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-006/">
+                <img class="mb-3" src="assets/kida/img/006_1280.jpg">
+                <p class="emphasis-threeInRow first d-inline">Morocco</p></a>
+                <p class="text-threeInRow first mt-4">Walking along the alleys of Marrakesh there were plenty of freshly colored yarn hung out from the roofs to dry in the sunlight. These colorful scenes unfolded with majestic beauty under the bright blue sky. Children made even more yarn at the side of the road.</p>
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-006/">
+                <p class="caption-threeInRow first"><i>Morocco</i><br>
+                Colors on board<br>
+                25 x 25 cm<br>
+                1990
+                </p></a>
+            </div>
+            <div class="col-6 col-lg-4">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-004/">
+                <img class="mb-3" src="assets/kida/img/004_640.jpg">
+                <p class="emphasis-threeInRow d-inline">Kathmandu</p></a>
+                <p class="text-threeInRow mt-4">Taking off from New Delhi, looking out over the Himalayans from the window, I feel relieved to arrive in Kathmandu. I felt my heart beginning to heal after the exhausting trip to India. The word “Kathmandu” actually means “a wooden temple” in the local language. Wooden buildings line up everywhere, and there are many three- or five-storied pagodas. On the markets surrounding the pagodas they sell vegetables and grains. Men with woodman's hatchets hanging from their loincloths selling jars, and then there are shops for dried cow dung used as fuel, and the more valuable firewood for kitchen use.</p>
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-004/">
+                <p class="caption-threeInRow"><i>Kathmandu,</i> Nepal
+                <br>Colors on board<br>
+                25 x 25 cm<br>
+                1990
+                </p></a>             
+            </div>
+            <div class="col-6 col-lg-4">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-005/">
+                <img class="mb-3" src="assets/kida/img/005_640.jpg">
+                <p class="emphasis-threeInRow d-inline">Samarkand</p></a>
+                <p class="text-threeInRow mt-4">Samarkand, praised by both Alexander the Great and Xuanzang for its beauty, regained its glory during the reign of Amir Timur after the destruction of the Mongolian enemy forces. Located in Uzbekistan, formerly a part of the Soviet Union, it is an erstwhile keypoint of Central Asia, though much if it's beauty now has faded. The mosques are now being restored, yet many of them still look like ruins to me. I heard there are many black markets in front of the blue tiled mosques or in the narrow alleys, so I took heart exploring them. The local guide who provided me with this information kept following at a distance. It seemed the guides are not welcome on the black markets.</p>
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-005/">
+                <p class="caption-threeInRow"><i>Samarkand,</i> Uzbekistan<br>
+                Colors on board<br>
+                25 x 25 cm<br>
+                1990
+                </p></a>             
+            </div>
+        </div>
+    </div>    
+
+
+    <!-- sixth content block, BOOTSTRAP version  -------------------->
+    <div class="container-fluid fourInRow">
+        <div class="row fade-in">
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-016/"><img src="assets/kida/img/016_640.jpg">
+                <p><i>Istanbul Grand Bazaar,</i> Turkey<br>Colors on board<br>18 x 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-017/"><img src="assets/kida/img/017_640.jpg">
+                <p><i>Athens Flea Market,</i> Greece<br>Colors on board<br>18 x 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-018/"><img src="assets/kida/img/018_640.jpg">
+                <p><i>Bucharest Unirii Market,</i> Romania<br>Colors on board<br>18 x 18 cm<br>1995</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-020/"><img src="assets/kida/img/020_640.jpg">
+                <p><i>Munich Victuals Market,</i> Germany<br>Colors on board<br>18 x 18 cm<br>1995</p></a>
+            </div>
+        </div>
+        <div class="row fade-in">
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-021/"><img src="assets/kida/img/021_640.jpg">
+                <p><i>Hamburg Fish Market,</i> Germany<br>Colors on board<br>18 x 18 cm<br>1995</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-022/"><img src="assets/kida/img/022_640.jpg">
+                <p><i>Amsterdam Secondhand Book Market,</i> The Netherlands<br>Colors on board<br>18 x 18 cm<br>1992</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-024/"><img src="assets/kida/img/024_640.jpg">
+                <p><i>Bruges Fish Market,</i> Belgium<br>Colors on board<br>18 x 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-028/"><img src="assets/kida/img/028_640.jpg">
+                <p><i>Madrid Unlicensed Street Market,</i> Spain<br>Colors on board<br>18 x 18 cm<br>1993</p></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- video ---------------------------------------------->
+    <div style="width: 100%; margin: 4em 0">
+        <video autoplay muted loop>
+            <source src="assets/kida/img/476.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+
+
+    <!-- seventh content block, BOOTSTRAP version  -------------------->
+    <div class="container-fluid fourInRow" style="margin: 20px 0 20px">
+        <div class="row fade-in">
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-009/"><img src="assets/kida/img/009_640.jpg">
+                <p><i>Kowloon Evening Market,</i> Hongkong<br>Colors on board<br>18 x 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-034/"><img src="assets/kida/img/034_640.jpg">
+                <p><i>Ipanema Hippie Market,</i> Brazil<br>Colors on board<br>18 x 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-029/"><img src="assets/kida/img/029_640.jpg">
+                <p><i>Fez Souk,</i> Morocco<br>Colors on board<br>18 x 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-023/"><img src="assets/kida/img/023_640.jpg">
+                <p><i>Amsterdam Stamp Market,</i> The Netherlands<br>Colors on board<br>18 x 18 cm<br>1995</p></a>
+            </div>
+        </div>
+        <div class="row fade-in">
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-008/"><img src="assets/kida/img/008_640.jpg">
+                <p><i>Suzhou Free Market,</i> China<br>Colors on board<br>18 x 18 cm<br>1992</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-027/"><img src="assets/kida/img/027_640.jpg">
+                <p><i>Alfama (Lisbon) Fish Market,</i> Portugal<br>Colors on board<br>18 x 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-030/"><img src="assets/kida/img/030_640.jpg">
+                <p><i>Cairo Souk,</i> Egypt<br>Colors on board<br>18 x 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/english/shop/g/g202008-031/"><img src="assets/kida/img/031_640.jpg">
+                <p><i>Seattle Pike Place Market,</i> United States<br>Colors on board<br>18 x 18 cm<br>1995</p></a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+
+
+    <!-- installation view -------------------------------------->
+    <div style="width: 100%;">
+        <img src="assets/kida/img/IMG-0305.JPG" style="width: 100%;">
+    </div>
+
+
+
+
+    <!-- FOOTER --------------------------------------------->
+    <div class="footer">
+        <div><a href="https://www.shibunkaku.co.jp/english/privacypolicy/">Privacy</a></div>
+        <div><a href="https://shop.shibunkaku.co.jp/english/shop/pages/legal.aspx">Terms</a></div>
+        <div><a href="https://www.shibunkaku.co.jp/english/company/">About</a></div>
+        <div><a href="https://shop.shibunkaku.co.jp/english/shop/pages/guide.aspx">FAQ</a></div>
+        <div><a href="https://shop.shibunkaku.co.jp/english/shop/contact/contact.aspx">Contact</a></div>
+        <div class="copyright">© Shibunkaku 2020</div>
+        <div class="sns-icons">
+            <a href="https://www.facebook.com/Shibunkaku-%E6%80%9D%E6%96%87%E9%96%A3-300176220101381/" target="_blank">
+                <img src="assets/sns%20icons/Icon01_FB.jpg" alt="" style="margin-right: 20px"></a>
+            <a href="https://www.instagram.com/shibunkaku/?hl=en" target="_blank">
+                <img src="assets/sns%20icons/Icon02_Instagram.jpg" alt=""></a>
+            <a href="https://twitter.com/G_SHIBUNKAKU" target="_blank">
+                <img src="assets/sns%20icons/Icon03_Twitter.jpg" alt="" style="margin-left: 20px"></a>
+        </div>
+    </div>
+
+</body></html>

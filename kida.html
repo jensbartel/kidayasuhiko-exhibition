@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+
+<!-- dev. note: index.html corresponds to what later will be kida_eng.html-->
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset='utf-8'>
+    <title>Shibunkaku | Kida Yasuhiko</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/kida/css/sass_styles_jp.css">
+    <link rel="stylesheet" href="assets/kida/css/hamburgers.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/kida/js/script.js"></script>
+    <script type="text/javascript" src="assets/kida/js/jquery_functions.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- side drawer and header ----------------------------->
+    <div class="side-drawer" id="side-drawer">
+        <ul>
+            <li><a href="https://shop.shibunkaku.co.jp/shop/default.aspx">思文閣オンラインショップ</a></li>
+            <li><a href="https://www.shibunkaku.co.jp/">思文閣トップ</a></li>
+            <li onclick="showSubmenu('1')">
+                <a href="javascript:void(0);">過去のイベント</a>
+                <ul class="submenu" id="submenu1">
+                    <li><a href="https://www.shibunkaku.co.jp/event/mishima.html">三嶋りつ恵</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/shop/e/eHayashi/">林武「彼女」展</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/shop/e/eAkagi/">赤木明登 茶の箱とうつわ</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/shop/e/eKuroda/">黒田征太郎・泰蔵兄弟展</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/shop/e/eYamagu/">山口長男水彩展</a></li>
+                </ul>
+            </li>
+            <li><a href="https://shop.shibunkaku.co.jp/shop/r/r10/">作家一覧</a></li>
+            <li onclick="showSubmenu('2')">
+                <a href="javascript:void(0);">ジャンルで検索</a>
+                <ul class="submenu" id="submenu2">
+                    <li><a href="https://shop.shibunkaku.co.jp/shop/goods/search.aspx?search=x&genre_tree=60&search=search">書</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/shop/goods/search.aspx?search=x&genre_tree=70&search=search">画</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/shop/goods/search.aspx?search=x&genre_tree=80&search=search">工芸</a></li>
+                </ul>
+            </li>
+            <li onclick="showSubmenu('3')">
+                <a href="javascript:void(0);">形式で検索</a>
+                <ul class="submenu" id="submenu3">
+                    <li><a href="https://shop.shibunkaku.co.jp/shop/goods/search.aspx?search=x&genre_tree=30&search=search">軸</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/shop/goods/search.aspx?search=x&genre_tree=40&search=search">額</a></li>
+                    <li><a href="https://shop.shibunkaku.co.jp/shop/goods/search.aspx?search=x&genre_tree=50&search=search">屏風</a></li>
+                </ul>
+            </li>
+            <li id="signInLinkMobile">
+                <a href="https://shop.shibunkaku.co.jp/shop/customer/menu.aspx">ログイン/マイページ</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="header" id="header">
+        <div class="menu-left">
+            <div>
+                <button class="hamburger hamburger--3dxy" type="button" onClick="menuButtonAnimation()" id="hamburger">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+            <div>
+                <a href="https://shop.shibunkaku.co.jp/shop/default.aspx">
+                    <img id="logo" src="assets/shibunlogo.jpg"></a>
+            </div>
+            <div class="signIn-mobile">
+                <a href="kida_eng.html">ENG</a>
+            </div>
+        </div>
+        <div class="signIn">
+            <div class="signInItemLeft">
+                <a href="https://shop.shibunkaku.co.jp/shop/customer/menu.aspx">ログイン/マイページ</a>
+            </div>
+            <div>
+                <a href="kida_eng.html">ENG</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- top section ---------------------------------------->
+    <div class="mainvisual">
+        <img src="assets/kida/img/kida_exView01.jpg">
+    </div>
+
+    <div class="introduction-text">
+        <h1>木田安彦　世界の市</h1>
+        <p class="exhibition-dates">思文閣　京都本社、2020年8月27日（木）—9月6日（日）<br>〒605-0089 京都市東山区古門全通大和大路東入元町355、Tel: 075-531-0001</p>
+        <p class="exhibition-dates">思文閣銀座、9月11日（金）—9月20日（日）<br>〒104-0061東京都中央区銀座5丁目3番1 2号　壹番館ビルディング、Tel: 075-531-0001</p>
+        <p class="intro">2015年8月に木田安彦さんが亡くなって5年、手つかずのまま遺されていたアトリエの片隅に、氏の人生を象徴するかのような作品群が見つかった。小さな画面に収まりきらない活気と匂いと喧騒が描かれた市場の板絵だ。なによりも人との触れ合いを制作の糧とした木田さんは、美味しいものと人が集まる京の台所・錦市場近くに居を構え、世界一周航空券を手にしては、世界中の市場を見て回った。<br><br>旅の友は特注した掌サイズのスケッチブック。ページをめぐる旅に、木田さんが出会った人やモノたちが顔を出す。今回はご遺族の快諾を得て、これらスケッチブックもお見せできることになった。旅すること、人が集まることが憚れるようになってしまった昨今、木田さんが遺した作品を通じて、世界の市場を廻る旅に出かけてみよう。</p><br>
+<!--        <p style="font-size: 0.75em; line-height: 1.25;">* All texts and travel memories quoted from: Kida Yasuhiko, <i>Markets of the World</i>. Kawade Shobō Shinsha (Tokyo, 1993).</p>-->
+    </div>
+
+
+
+
+    <!-- first content block -------------------------------->
+    <div class="half-page-variant top-square">
+        <div class="col-left">
+            <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-002/"><img src="assets/kida/img/002_1280.jpg"></a>
+        </div>
+        <div class="col-right">
+            <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-002/"><span class="emphasis">香港</span></a>
+            <p>香港で思い浮かぶのは、カラフルなネオンのサイン、路面電車や二階建てバス、蓮香楼の飲茶、「100万ドルの夜景」のビクトリアピークは言うまでもなく、蘭桂坊のBAR街、九龍のあちらこちらにある夜市など。昼夜問わずいつも活気に溢れている。ホテルが蘭桂坊にもう一店あるのでまちがって教えられて坂道を行ったり来たりした。しかしやはり蘭桂坊のBAR街はものすごい。</p>
+            <div class="caption"><a href="https://shop.shibunkaku.co.jp/shop/g/g202008-002/">香港<br>25 × 25 cm<br>1990</a></div>
+        </div>
+    </div>
+
+    <div class="half-page-variant not-first">
+        <div class="col-left">
+            <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-003/"><span class="emphasis">チェンマイの市場</span></a>
+            <p>机と椅子以外の四つ足は何でも食べると悪口を言われるだけあって中国系の市場はド迫力そのもの。何処にでも顔を見せるパックツアーの大和撫子もさすがに見かけない。大雨の後の水溜りにも鯰がいるというお国柄、いろいろな鯰がいっぱいなのはご愛嬌。</p>
+            <div class="caption"><a href="https://shop.shibunkaku.co.jp/shop/g/g202008-003/">チェンマイの市場、タイ<br>25 × 25 cm<br>1990</a></div>
+        </div>
+        <div class="col-right">
+            <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-003/"><img src="assets/kida/img/003_1280.jpg"><br><br></a>
+        </div>
+    </div>
+
+    <div class="separator">
+        <hr size="1">
+    </div>
+
+
+
+
+    <!-- second content block, SASS + BOOTSTRAP version  --------------->
+    <div class="container-fluid fade-in">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-007/">
+                <img class="mb-3" src="assets/kida/img/007_1280.jpg">
+                    <p class="emphasis-threeInRow first d-inline">ソウルの市場</p></a>
+                <p class="text-threeInRow first mt-4">ソウルの冬は厳しい。しかし韓国のおばさん達は元気だ。ここソウルの南大門（ナンデムン）や東大門（トンデムン）市場は数百年の歴史を持ち、まさに韓国を代表する市場である。とにかく韓国の人々の溢れるエネルギーが、色彩そのものに表現されているようで凄い。常設の卸や小売りの店のビルがシャッターを降ろした後は、露店商が道路を占拠し、おばさん達の活躍の場となる。多くの屋台は韓国の庶民のあらゆる味を楽しませてくれる。気取ったOLも焼酎を飲みながら豚の頭の横で屋台の生き蛸をたいらげる。</p>
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-007/">
+                <p class="caption-threeInRow first">ソウルの市場。韓国<br>18 × 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-4">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-019/">
+                <img class="mb-3" src="assets/kida/img/019_640.jpg">
+                <p class="emphasis-threeInRow d-inline">ミラノの朝市</p></a>
+                <p class="text-threeInRow mt-4">ミラノのパピニアーノ通りに、毎週火・土曜日の朝、衣類や靴、雑貨などを並べる市が立つ。ミラノコレクションの地だけあって、さすがにどのテントも色鮮やかなファッションで埋まり、地元の客でいっぱいになる。しかし、スピガ通りやモンテ・ナポレオーネ通りのブティックに熱心な日本人客の姿はあまり見られない。</p>
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-019/">
+                <p class="caption-threeInRow">ミラノの朝市、イタリア<br>18 × 18 cm<br>1992</p></a>                
+            </div>
+            <div class="col-6 col-lg-4">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-033/">
+                <img class="mb-3" src="assets/kida/img/033_640.jpg">
+                <p class="emphasis-threeInRow d-inline ciudadela">シウダデラ民芸市場</p></a>
+                <p class="text-threeInRow mt-4">メキシコシティのシウダデラ市場は、民芸品専門の市場である。メキシコは民芸品の宝庫といわれる。なるほどここには全国各地から集められたカラフルなお面、動物の人形、テラコッタ、楽器、革製品などが小さな店ごとに所狭しと積まれている。インディオの織物の実演もあれば、ギターの工房もある。しかし、さらに奥の方へと進み、金工品などが作られている工場を目にすると、いかにも土産物を乱造しているようで興ざめであった。</p>
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-033/">
+                <p class="caption-threeInRow">シウダデラ民芸市場、メキシコ<br>18 × 18 cm<br>1992</p></a>               
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <!-- third content block, BOOTSTRAP version  -------------------->
+    <div class="container-fluid fourInRow">
+        <div class="row fade-in">
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-001/"><img src="assets/kida/img/001_640.jpg">
+                <p>天壇、中国<br>22.5 × 22.5 cm<br>1989</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-026/"><img src="assets/kida/img/026_640.jpg">
+                <p>クリニャンクールの蚤の市、フランス<br>18 × 18 cm<br>1995</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-032/"><img src="assets/kida/img/032_640.jpg">
+                <p>サンフラン・エル・アルトのメルカード、グアテマラ<br>18 × 18 cm<br>1995</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-011/"><img src="assets/kida/img/011_640.jpg">
+                <p>バンコックの水上マーケット、タイ<br>18 × 18 cm<br>1991</p></a>
+            </div>
+        </div>
+        <div class="row captions-row fade-in">
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-013/"><img src="assets/kida/img/013_640.jpg">
+                <p>ティンプーのサブジバザール、ブータン<br>18 × 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-014/"><img src="assets/kida/img/014_640.jpg">
+                <p>パロの日曜市、ブータン<br>18 × 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-010/"><img src="assets/kida/img/010_640.jpg">
+                <p>長洲島の市、香港<br>18 × 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-012/"><img src="assets/kida/img/012_640.jpg">
+                <p>クルンクンの朝市、インドネシア<br>18 × 18 cm<br>1992</p></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- installation view ---------------------------------------->
+<!--
+    <div style="width: 100%; margin: 4em 0;">
+        <img src="assets/kida/img/IMG-0302.JPG" style="width: 100%;">
+    </div>
+-->
+    
+    <!-- video ---------------------------------------------->
+    <div style="width: 100%; margin: 4em 0">
+        <video autoplay muted loop>
+            <source src="assets/kida/img/471.mp4" type="video/mp4">
+        </video>
+    </div>    
+
+
+
+
+    <!-- fourth content block --------------->
+    <div class="half-page-variant not-first top-square">
+        <div class="col-left">
+            <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-025/"><span class="emphasis portobello">ポートベロー・マーケット</span></a>
+            <p>ロンドンの数あるストリートマーケットの代表的なものがポートベロー。ロンドンでアンティークを買うには曜日が大切である。何故なら曜日により市の立つ場所が異なるからだ。ポートベローは土曜日に開かれ、店舗と屋台の数はロンドン最大。近年は観光客相手のお土産屋や若者相手のアクセサリーの店も増えているとはいえ、さすが大英帝国と思わせる逸品からガラクタまで何でもある。おまけにストリートミュージシャンなども出て一日中楽しませてくれるのである。</p>
+            <div class="caption"><a href="https://shop.shibunkaku.co.jp/shop/g/g202008-025/">ポートベロー・マーケット、イギリス<br>18 × 18 cm<br>1993</a></div>
+        </div>
+        <div class="col-right">
+            <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-025/"><img src="assets/kida/img/025_1280%20copy.jpg"></a><br><br>
+        </div>
+    </div>
+
+    <div class="half-page-variant">
+        <div class="col-left">
+            <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-015/"><img src="assets/kida/img/015_1280.jpg"></a>
+        </div>
+        <div class="col-right">
+            <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-015/"><span class="emphasis">オールドデリーの鳩市</span></a>
+            <p>ムガール帝国の栄華を偲ばせるオールドデリー。その象徴レッド・フォートから東にのびる大通りが繁華街のチャンドン・チョークである。両側には露店がひしめく。その北側の一隅に、バラック建ての集まった鳩市があった。おそらく食用鳩であろう。</p>
+            <div class="caption"><a href="https://shop.shibunkaku.co.jp/shop/g/g202008-015/">オールドデリーの鳩市、インド<br>18 × 18 cm<br>1993</a></div>
+        </div>
+    </div>
+
+    <div class="separator">
+        <hr size="1">
+    </div>
+
+
+
+
+    <!-- fifth content block, SASS + BOOTSTRAP version  ------------>
+    <div class="container-fluid fade-in">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-006/">
+                <img class="mb-3" src="assets/kida/img/006_1280.jpg">
+                <p class="emphasis-threeInRow first d-inline">モロッコ</p></a>
+                <p class="text-threeInRow first mt-4">マラケシュの路地を歩いていると、染め上げたばかりの糸がいっぱいに干されている。そのカラフルな色彩は抜けるような空の青さに映えて美しい。道端では子供が糸を紡ぐ。</p>
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-006/">
+                <p class="caption-threeInRow first">モロッコ<br>25 × 25 cm<br>1990</p></a>
+            </div>
+            <div class="col-6 col-lg-4">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-004/">
+                <img class="mb-3" src="assets/kida/img/004_640.jpg">
+                <p class="emphasis-threeInRow d-inline">カトマンドゥ</p></a>
+                <p class="text-threeInRow mt-4">ニューデリーを飛びたち、ヒマラヤ山脈を窓外に見て、カトマンドゥに入ると、救われたような気がする。インドの険しさに疲れた心を、癒す何かがこの地にはある。カトマンドゥとは、がんらい「木造の寺」という意味である。いたる所木造建築物が立ち並び、三重や五重の寺塔も多い。塔を取り囲むように野菜や穀物を商う市が立つ。褌一つに大きな山刀を下げて壺を売る男もいれば、牛糞を干し固めた燃料や、貴重品の炊事用の薪を売る店もある。秤の重りは石ころそのまま。そこには、中世の面影がある。</p>
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-004/">
+                <p class="caption-threeInRow">カトマンドゥ、ネパール<br>25 × 25 cm<br>1990</p></a>             
+            </div>
+            <div class="col-6 col-lg-4">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-005/">
+                <img class="mb-3" src="assets/kida/img/005_640.jpg">
+                <p class="emphasis-threeInRow d-inline">サマルカンド</p></a>
+                <p class="text-threeInRow mt-4">アレクサンドロス大王も玄奘三蔵も美しさを讃えたこの地は、モンゴル軍の破壊後、チムール帝によって栄華を取り戻す。旧ソ連ウズベク共和国のサマルカンドである。しかし中央アジアのかつての要衝も今は寂れる一方。モスクの修復は進んでいるものの、一見、廃墟のような印象をうける。青のタイルのモスクの前や狭い路地に闇市がよく立つというので勇躍出掛けてみたが、頼みもしないその筋のお供が見え隠れについてきた。闇市側もお供付きは歓迎しないと見え、引き上げてしまったようだ。</p>
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-005/">
+                <p class="caption-threeInRow">サマルカンド、ウズベキスタン<br>25 × 25 cm<br>1990</p></a>             
+            </div>
+        </div>
+    </div>    
+
+
+    <!-- sixth content block, BOOTSTRAP version  -------------------->
+    <div class="container-fluid fourInRow">
+        <div class="row fade-in">
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-016/"><img src="assets/kida/img/016_640.jpg">
+                <p>イスタンブール・グランドバザール、トルコ<br>18 × 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-017/"><img src="assets/kida/img/017_640.jpg">
+                <p>アテネの蚤の市、ギリシャ<br>18 × 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-018/"><img src="assets/kida/img/018_640.jpg">
+                <p>ブカレストのウリニ市場、ルーマニア<br>18 × 18 cm<br>1995</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-020/"><img src="assets/kida/img/020_640.jpg">
+                <p>ミュンヘン・ヴィクトアリエンマルクト、ドイツ<br>18 × 18 cm<br>1995</p></a>
+            </div>
+        </div>
+        <div class="row fade-in">
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-021/"><img src="assets/kida/img/021_640.jpg">
+                <p>ハンブルクのフィッシュマルクト、ドイツ<br>18 × 18 cm<br>1995</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-022/"><img src="assets/kida/img/022_640.jpg">
+                <p>アムステルダムの古本市、オランダ<br>18 × 18 cm<br>1992</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-024/"><img src="assets/kida/img/024_640.jpg">
+                <p>ブリュージュの魚市場、ベルギー<br>18 × 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-028/"><img src="assets/kida/img/028_640.jpg">
+                <p>マドリッドのもぐり露店市、スペイン<br>18 × 18 cm<br>1993</p></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- video ---------------------------------------------->
+    <div style="width: 100%; margin: 4em 0">
+        <video autoplay muted loop>
+            <source src="assets/kida/img/476.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+
+
+    <!-- seventh content block, BOOTSTRAP version  -------------------->
+    <div class="container-fluid fourInRow" style="margin: 20px 0 20px">
+        <div class="row fade-in">
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-009/"><img src="assets/kida/img/009_640.jpg">
+                <p>九龍の夜市、香港<br>18 × 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-034/"><img src="assets/kida/img/034_640.jpg">
+                <p>イパネマのヒッピー市、ブラジル<br>18 × 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-029/"><img src="assets/kida/img/029_640.jpg">
+                <p>フェズのスーク、モロッコ<br>18 × 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-023/"><img src="assets/kida/img/023_640.jpg">
+                <p>アムステルダムの切手市、オランダ<br>18 × 18 cm<br>1995</p></a>
+            </div>
+        </div>
+        <div class="row fade-in">
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-008/"><img src="assets/kida/img/008_640.jpg">
+                <p>蘇州の自由市場、中国<br>18 × 18 cm<br>1992</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-027/"><img src="assets/kida/img/027_640.jpg">
+                <p>アルファマの魚市、ポルトガル<br>18 × 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-030/"><img src="assets/kida/img/030_640.jpg">
+                <p>カイロのスーク、エジプト<br>18 × 18 cm<br>1993</p></a>
+            </div>
+            <div class="col-6 col-lg-3">
+                <a href="https://shop.shibunkaku.co.jp/shop/g/g202008-031/"><img src="assets/kida/img/031_640.jpg">
+                <p>シアトル　パイクプレイス・マーケット、アメリカ<br>18 × 18 cm<br>1995</p></a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+
+
+    <!-- installation view -------------------------------------->
+    <div style="width: 100%;">
+        <img src="assets/kida/img/IMG-0305.JPG" style="width: 100%;">
+    </div>
+
+
+
+
+    <!-- FOOTER --------------------------------------------->
+    <div class="footer">
+        <div><a href="https://www.shibunkaku.co.jp/privacypolicy/">個人情報</a></div>
+        <div><a href="https://shop.shibunkaku.co.jp/shop/pages/legal.aspx">特定商取引法等</a></div>
+        <div><a href="https://www.shibunkaku.co.jp/company/">会社情報</a></div>
+        <div><a href="https://shop.shibunkaku.co.jp/shop/pages/guide.aspx">ご注文のご案内</a></div>
+        <div><a href="https://shop.shibunkaku.co.jp/shop/contact/contact.aspx">お問い合わせ</a></div>
+        <div class="copyright">© Shibunkaku 2020</div>
+        <div class="sns-icons">
+            <a href="https://www.facebook.com/Shibunkaku-%E6%80%9D%E6%96%87%E9%96%A3-300176220101381/" target="_blank">
+                <img src="assets/sns%20icons/Icon01_FB.jpg" alt="" style="margin-right: 20px"></a>
+            <a href="https://www.instagram.com/shibunkaku/?hl=en" target="_blank">
+                <img src="assets/sns%20icons/Icon02_Instagram.jpg" alt=""></a>
+            <a href="https://twitter.com/G_SHIBUNKAKU" target="_blank">
+                <img src="assets/sns%20icons/Icon03_Twitter.jpg" alt="" style="margin-left: 20px"></a>
+        </div>
+    </div>
+
+</body></html>
